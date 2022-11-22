@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-      <meta charset = "UTF-8">
-     <title>Etch-A-Skeleton</title>
-     <body>
-        <div class = 'container'></div>
-        <script href="web.js"></script>
-     </body>
-     </head>
+<html>
+  <head>
+    <title>Etch-A-Skeleton</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="web.js"></script>
+  </head>
+  <body>
+    <h1>Board size  16x16</h1>
+    <h1>Etch-A-Skeleton</h1>
+    <div class="header">
+    <h6>Select the size</h6>
+    <button id="popup">Select</button>
+  </div>
+    <p id="message"></p>
+    <div class="board"></div>
+    <div class="footer">
+      <button onclick="resetBoard()">Reset</button>
+      <button onclick="setColor('random')">Random</button>
+      <button onclick="setColor('black')">Black</button>
+    </div>
+  </body>
 </html>
