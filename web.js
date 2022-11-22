@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
   const createBoard = (size) => {
   let board = document.querySelector(".board");
 
-board.style.gridTemplateColumns = 'repeat(16, 1fr)';
+board.style.gridTemplateColumns = 'repeat(${size}, 1fr)';
 board.style.gridTemplateRows = 'repeat(16, 1fr)';
 
   let numDivs = size * size;
